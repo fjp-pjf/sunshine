@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Comic+Neue|Liu+Jian+Mao+Cao|Roboto+Slab&display=swap');
+:root{
+    --Abel:"Abel", sans-serif;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(
+       to bottom,#dd2476,#ff512f);
+    --light-gray:rgba(255,255,255,0.2);
+}
+header,section{
+    overflow-x: hidden;
+}
+header{
+    background:var(--bggradient);
+}
+
+header a{
+    font-family:var(--Abel);
+    font-size:0.9em;
+    color:#0c0b0baf;
+    font-size:20px;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:white;
+    min-width:160px;
+    box-shadow:0px 2px 15px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.dropdown-content a{
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-content a:hover{
+    background:#ddd;
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+header .nav-item:last-child{
+padding-right:10.5em;
+}
+header .nav-item{
+    padding:0.8em;
+}
+header .navbar-brand{
+    padding-left:0.8em;
+    font-size:35px;
+}
+header .row .col-md-5{
+    padding:4.2em;
+}
+header .row .col-md-7{
+    padding:8em;
+    padding-bottom:8em;
+}
+.cl-md-3{
+    height:24rem;
+}
+.picture{
+    border-radius:20px;
+    width:50px;
+    height:50px;
+}
+footer{
+    background: rgba(0,0,0,0.815);
+    overflow-x:hidden;
+    padding:14vmin 18vmin;
+}
+footer input{
+    border:none !important;
+
+}
+footer .input-group .input-group-text{
+    background:var(--bggradient);
+    border:none;
+}
+footer .column i{
+    color:#dd2476;
+}
+footer .column i + i{
+    padding:0 0.5em;
+}
+main{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.card{
+    width:18rem;
+    height:20rem;
+}
+.col-md-4{
+    margin-bottom:30px;
+}
+  
