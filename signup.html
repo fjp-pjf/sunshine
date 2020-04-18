@@ -7,18 +7,28 @@
     <link rel="stylesheet"type="text/css"href="../css/signup.css">
 </head>
 <body>
- <form>
+
+           <!-- form start -->
+
+ <form action="login.html"onsubmit="return validate()">
   <div id="signup-box">
   <div class="left-box">
    <h1>Sign Up</h1>
-    <input type="text"class="input-box"name="firstname"placeholder="name">
-  <input type="email"class="input-box"name="email"placeholder="email">
-<input type="password"class="input-box"name="password"placeholder="password">
+    <input type="text"class="input-box"name="firstname"placeholder="name"id="name"required>
+    <input type="text"class="input-box"name="phone-number"placeholder="mobile.no"id="number"required>
+    <label for="wrong"id="wrong"></label>
+  <input type="email"class="input-box"name="email"placeholder="email"id="email"required>
+  <label for="error"id="error"></label>
+<input type="password"class="input-box"name="password"placeholder="password"id="pwd"required>
+<label for="paswrd"id="paswrd"></label>
 <p><span><input type="checkbox"></span>I agree to the terms and conditions</p>
- <input type="submit"name="Signup-button"value="signup">
-<p class="sunny">Already have an account? <a href="login.html">Log in</a></p>
+ <input type="submit"name="Signup-button"value="signup"id="submit">
+<p class="login">Already have an account? <a href="login.html">Log in</a></p>
   </div>
   </form>
+
+        <!-- form end -->
+
    <div class="right-box">
     <span class="signinwith">Sign in with<br>Social Network</span>
    <button class="social facebook">Log in with facebook</button>
@@ -27,5 +37,9 @@
   </div>
     <div class="or">OR</div>
    </div> 
+   <!-- signup-box end -->
+   <script src="https://ajax.googleapis.com/…/li…/jquery/3.3.1/jquery.min.js"></script>
+   <script src="jquery-input-mask-phone-number.min.js"></script>
+  <script src="signup.js"></script>
   </body>
  </html>

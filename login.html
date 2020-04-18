@@ -7,14 +7,15 @@
     <link rel="stylesheet"type="text/css"href=../css/login.css>
 </head>
 <body>
-    <form action="login.html" class="box">
+    <form action="login.html" class="box"onsubmit="validate()">
         <h1>Log In</h1>
-        <input type="text"name="first name"placeholder="Name">
-        <input type="password"name="password"placeholder="password">
+        <input type="text"name="first name"placeholder="Username"id="name"required>
+        <input type="password"name="password"placeholder="password"id="pwd"required>
+        <label for="paswrd"id="paswrd"></label>
         <input type="submit"name="submit"value="Login">
         <p>Don't have an account?<a href="signup.html">Sign up</a>
         </p>
-
     </form>
+    <script src="login.js"></script>
 </body>
 </html>
